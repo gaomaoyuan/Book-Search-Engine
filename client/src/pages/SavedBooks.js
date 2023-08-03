@@ -17,6 +17,7 @@ import { REMOVE_BOOK } from '../graphql/mutations';
 const SavedBooks = () => {
   // Use the useQuery hook to make the GET_ME query on component load
   const { loading, data } = useQuery(GET_ME);
+  console.log(data);
 
   // Use the useMutation hook to get the REMOVE_BOOK mutation function
   const [removeBook] = useMutation(REMOVE_BOOK);
